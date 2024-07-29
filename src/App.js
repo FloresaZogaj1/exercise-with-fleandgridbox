@@ -1,23 +1,42 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import image2 from './assets/images.jpg';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <header className="header">Header</header>
+      <main className="main-content">
+        <div className="card">
+          <img src={image2} alt="Sample" className="card-image" />
+          <div className="card-content">
+            <h2 className="card-title">Card Title 1</h2>
+            <p className="card-text">This is some description text for the first card.</p>
+          </div>
+        </div>
+        <div className="card">
+          <img src={image2} alt="Sample" className="card-image" />
+          <div className="card-content">
+            <h2 className="card-title">Card Title 2</h2>
+            <p className="card-text">This is some description text for the second card.</p>
+          </div>
+        </div>
+        <div className="card">
+          <img src={image2} alt="Sample" className="card-image" />
+          <div className="card-content">
+            <h2 className="card-title">Card Title 3</h2>
+            <p className="card-text">This is some description text for the third card.</p>
+          </div>
+        </div>
+        <div className="card">
+          <img src={image2} alt="Sample" className="card-image" />
+          <div className="card-content">
+            <h2 className="card-title">Card Title 4</h2>
+            <p className="card-text">This is some description text for the fourth card.</p>
+          </div>
+        </div>
+      </main>
+      <footer className="footer">Footer</footer>
     </div>
   );
 }
